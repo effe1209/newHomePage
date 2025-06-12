@@ -13,3 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeInElements.forEach(el => observer.observe(el));
 });
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  effect: 'fade', // <--- EFFETTO FADE
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  speed: 1000, // durata della transizione
+});
+
