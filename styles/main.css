@@ -330,3 +330,13 @@ iframe {
   height: 100%;
   object-fit: cover;
 }
+
+/* Comportamento su mobile */
+@media (max-width: 768px) {
+  .preview iframe {
+    height: 250px;           /* Altezza fissa più contenuta */
+    pointer-events: none;    /* Disabilita interazione (opzionale) */
+    user-select: none;       /* Evita selezione indesiderata */
+    touch-action: none;      /* Previene gesture di zoom/scroll */
+  }
+}   
