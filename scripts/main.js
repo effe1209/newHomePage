@@ -39,7 +39,7 @@ ScrollTrigger.matchMedia({
         {
           opacity: 1,
           y: 0,
-          duration: 2,
+          duration: 1.6,
           ease: "power2.out",
           scrollTrigger: {
             trigger: slide,
@@ -54,7 +54,7 @@ ScrollTrigger.matchMedia({
         {
           opacity: 1,
           x: 0,
-          duration: 1.5,
+          duration: 1.2,
           ease: "power3.out",
           scrollTrigger: {
             trigger: slide,
@@ -69,7 +69,7 @@ ScrollTrigger.matchMedia({
         {
           opacity: 1,
           x: 0,
-          duration: 1.5,
+          duration: 1.2,
           ease: "power3.out",
           scrollTrigger: {
             trigger: slide,
@@ -88,7 +88,7 @@ ScrollTrigger.matchMedia({
         {
           opacity: 1,
           y: 0,
-          duration: 2,
+          duration: 1.6,
           ease: "power2.out",
           scrollTrigger: {
             trigger: slide,
@@ -133,7 +133,7 @@ gsap.utils.toArray(".about").forEach((slide) => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 1.2,
         ease: "power3.out",
         scrollTrigger: {
           trigger: slide,
