@@ -338,5 +338,6 @@ iframe {
     pointer-events: none;    /* Disabilita interazione (opzionale) */
     user-select: none;       /* Evita selezione indesiderata */
     touch-action: none;      /* Previene gesture di zoom/scroll */
+    touch-action: pan-y;
   }
 }   
