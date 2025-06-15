@@ -143,13 +143,36 @@ gsap.utils.toArray(".about").forEach((slide) => {
       });
   });
 
-// Rimuove il preloader solo quando tutte le immagini sono caricate
-    window.addEventListener('load', function () {
-      const preloader = document.getElementById('preloader');
-      preloader.style.opacity = '0';
-      preloader.style.transition = 'opacity 0.5s ease';
+const MIN_DISPLAY_TIME = 2000; // 2 secondi
+const preloader = document.getElementById('preloader');
+const imageContainer = document.getElementById('image-container');
+const startTime = Date.now();
 
+window.addEventListener('load', function () {
+  const elapsed = Date.now() - startTime;
+  const remaining = Math.max(0, MIN_DISPLAY_TIME - elapsed);
+
+  setTimeout(() => {
+    // Avvia animazione explode
+    imageContainer.classList.add('explode');
+
+    // Avvia il fade out del preloader dopo un delay pari alla durata dell'animazione explode
+    const explodeDuration = 1000; // esempio: 1.5 secondi, metti la durata reale della tua animazione explode
+
+    setTimeout(() => {
+      preloader.style.transition = 'opacity 0.5s ease';
+      preloader.style.opacity = '0';
+
+      // Nascondi il preloader dopo il fade out
       setTimeout(() => {
         preloader.style.display = 'none';
-      }, 500); // corrisponde alla durata della transizione
-    });
+      }, 500);
+    }, explodeDuration);
+  }, remaining);
+});
+
+
+
+    
+
+    
