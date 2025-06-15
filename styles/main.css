@@ -451,7 +451,7 @@ iframe {
 /* Taglio diagonale: da sinistra in alto a destra in basso */
 .left {
   clip-path: polygon(0 0, 100% 0, 0  100%);
-  margin-left: 23%;
+  margin-left: 22.5%;
 }
 
 /* Taglio opposto: da destra in alto a sinistra in basso */
@@ -460,17 +460,19 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  .spinner {
-  width: 400px;    /* leggermente più grande del logo */
-  height: 400px;
-  margin-top: -200px;  /* metà dell'altezza per centrare */
-  margin-left: -200px; /* metà della larghezza per centrare */
+
+.spinner-container {
+  width: 370px;
+  height: 370px;
+  margin-top: -200px;
+  margin-left: -200px;
 }
 
   .half {
-  left: 15.5%;
-  width: 300px;
-  height: 300px;
+    top: 49%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
 }
   /* Taglio diagonale: da sinistra in alto a destra in basso */
 .left {
