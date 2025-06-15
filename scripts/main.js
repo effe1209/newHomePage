@@ -148,6 +148,10 @@ const preloader = document.getElementById('preloader');
 const imageContainer = document.getElementById('image-container');
 const startTime = Date.now();
 
+// Precarica manualmente l'immagine di sfondo
+const bgImage = new Image();
+bgImage.src = '../assets/caric.png';
+
 window.addEventListener('load', function () {
   const elapsed = Date.now() - startTime;
   const remaining = Math.max(0, MIN_DISPLAY_TIME - elapsed);
