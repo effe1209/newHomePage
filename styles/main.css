@@ -399,15 +399,20 @@ iframe {
   margin-left: -150vmin;
   border-radius: 50%;
   background: conic-gradient(#111 0deg 180deg, #222 180deg 360deg);
-  animation: rotate180 2s ease-out forwards;
+  transform: rotate(35deg); /* posizione iniziale */
   z-index: 1;
 }
 
+/* Avvia animazione solo quando viene aggiunta la classe start */
+.rotating-circle.start {
+  animation: rotate180 2s ease-out forwards;
+}
 
 @keyframes rotate180 {
   from { transform: rotate(35deg); }
   to   { transform: rotate(215deg); }
 }
+
 
 
 
@@ -428,7 +433,7 @@ iframe {
 }
 
 .right {
-  left: 50%;
+  left: 48%;
   transform: translate(0%, -50%);
   background-position: right center;
 }
@@ -473,7 +478,7 @@ iframe {
 /* Taglio diagonale: da sinistra in alto a destra in basso */
 .left {
   clip-path: polygon(0 0, 100% 0, 0  100%);
-  margin-left: 22.5%;
+  margin-left: 22%;
 }
 
 /* Taglio opposto: da destra in alto a sinistra in basso */

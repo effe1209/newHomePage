@@ -151,10 +151,12 @@ const startTime = Date.now();
 window.addEventListener('load', function () {
   const elapsed = Date.now() - startTime;
   const remaining = Math.max(0, MIN_DISPLAY_TIME - elapsed);
-
+  document.getElementById('circle').classList.add('start');
   setTimeout(() => {
     // Avvia animazione explode
     imageContainer.classList.add('explode');
+    
+
 
     // Avvia il fade out del preloader dopo un delay pari alla durata dell'animazione explode
     const explodeDuration = 1000; // esempio: 1.5 secondi, metti la durata reale della tua animazione explode
