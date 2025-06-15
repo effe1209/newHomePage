@@ -389,6 +389,28 @@ iframe {
   75% { transform: translateY(5px); }   /* 20px giù */
 }
 
+.rotating-circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300vmin;
+  height: 300vmin;
+  margin-top: -150vmin;
+  margin-left: -150vmin;
+  border-radius: 50%;
+  background: conic-gradient(#111 0deg 180deg, #222 180deg 360deg);
+  animation: rotate180 2s ease-out forwards;
+  z-index: 1;
+}
+
+
+@keyframes rotate180 {
+  from { transform: rotate(35deg); }
+  to   { transform: rotate(215deg); }
+}
+
+
+
 .container {
   position: relative;
   width: 100vw;
@@ -485,3 +507,25 @@ iframe {
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
 }
+
+.diagonal-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;              
+  height: 30vh;           
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(35deg);
+  animation: fadeOut 1s ease-out 2s forwards;
+  z-index: 100;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
