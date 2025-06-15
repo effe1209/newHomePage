@@ -433,7 +433,7 @@ iframe {
 }
 
 .right {
-  left: 48%;
+  left: 50%;
   transform: translate(0%, -50%);
   background-position: right center;
 }
@@ -463,7 +463,7 @@ iframe {
 .half {
   position: absolute;
   top: 50%;
-  left: 39%;
+  left: 40%;
   width: 300px;
   height: 300px;
   background-image: url('../assets/caric.png');
@@ -478,7 +478,7 @@ iframe {
 /* Taglio diagonale: da sinistra in alto a destra in basso */
 .left {
   clip-path: polygon(0 0, 100% 0, 0  100%);
-  margin-left: 22%;
+  margin-left: 20%;
 }
 
 /* Taglio opposto: da destra in alto a sinistra in basso */
@@ -504,7 +504,7 @@ iframe {
   /* Taglio diagonale: da sinistra in alto a destra in basso */
 .left {
   clip-path: polygon(0 0, 100% 0, 0  100%);
-  margin-left: 70%;
+  margin-left: 80%;
 }
 
 /* Taglio opposto: da destra in alto a sinistra in basso */
