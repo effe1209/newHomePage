@@ -157,11 +157,8 @@ window.addEventListener('load', function () {
   const remaining = Math.max(0, MIN_DISPLAY_TIME - elapsed);
   document.getElementById('circle').classList.add('start');
   setTimeout(() => {
-    // Avvia animazione explode
     document.querySelector('.diagonal-line')?.classList.add('fade');
     imageContainer.classList.add('explode');
-    
-
 
     // Avvia il fade out del preloader dopo un delay pari alla durata dell'animazione explode
     const explodeDuration = 1000; // esempio: 1.5 secondi, metti la durata reale della tua animazione explode
@@ -173,7 +170,7 @@ window.addEventListener('load', function () {
       // Nascondi il preloader dopo il fade out
       setTimeout(() => {
         preloader.style.display = 'none';
-      }, 1000);
+      }, 500);
     }, explodeDuration);
   }, remaining);
 });
