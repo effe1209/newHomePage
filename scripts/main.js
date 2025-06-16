@@ -161,7 +161,7 @@ window.addEventListener('load', function () {
     imageContainer.classList.add('explode');
 
     // Avvia il fade out del preloader dopo un delay pari alla durata dell'animazione explode
-    const explodeDuration = 1000; // esempio: 1.5 secondi, metti la durata reale della tua animazione explode
+    const explodeDuration = 2000; // esempio: 1.5 secondi, metti la durata reale della tua animazione explode
 
     setTimeout(() => {
       preloader.style.transition = 'opacity 0.5s ease';
