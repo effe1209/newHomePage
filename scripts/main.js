@@ -173,7 +173,7 @@ window.addEventListener('load', function () {
       // Nascondi il preloader dopo il fade out
       setTimeout(() => {
         preloader.style.display = 'none';
-      }, 500);
+      }, 1000);
     }, explodeDuration);
   }, remaining);
 });
