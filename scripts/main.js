@@ -158,6 +158,7 @@ window.addEventListener('load', function () {
   document.getElementById('circle').classList.add('start');
   setTimeout(() => {
     // Avvia animazione explode
+    document.querySelector('.diagonal-line')?.classList.add('fade');
     imageContainer.classList.add('explode');
     
 
